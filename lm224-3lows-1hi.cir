@@ -1,0 +1,13 @@
+.title KiCad schematic
+.include "LED1.mod"
+.include "LM358.mod"
+R4 Net-_R2-Pad2_ Net-_D1-Pad2_ 470
+D1 GND Net-_D1-Pad2_ LED1
+U1 Net-_R2-Pad2_ Net-_C1-Pad1_ Net-_R1-Pad1_ GND unconnected-_U1-Pad5_ unconnected-_U1-Pad6_ unconnected-_U1-Pad7_ +12V LM358
+J1 GND +12V Power
+R2 Net-_R1-Pad1_ Net-_R2-Pad2_ 47k
+R3 Net-_C1-Pad1_ Net-_R2-Pad2_ 10k
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ 1k
+RV1 +12V Net-_R1-Pad2_ GND 10k
+C1 Net-_C1-Pad1_ GND 0.1uF
+.end
